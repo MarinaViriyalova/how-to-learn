@@ -89,18 +89,17 @@
     z-index: 1;
 }
 
-.discription {
+.description {
     display: flex;
     justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .two-columns {
     display: flex;
     justify-content: space-between;
-    margin-left: 175px;
     width: 80%;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .two-columns__brief {
@@ -108,6 +107,7 @@
     color: #2f80ed;
     line-height: 1.2;
     font-size: 18px;
+    margin: 0;
     font-weight: normal;
 }
 
@@ -116,18 +116,17 @@
     width: 80%;
     display: flex;
     flex-direction: column;
-    align-self: center;
     justify-content: space-between;
 }
 
-.two-columns_paragraph {
+.two-columns__paragraph {
     line-height: 34px;
     font-size: 24px;
-    font-weight: normal;
     margin-bottom: 30px;
+    margin-top: 0;
 }
 
-.two-columns_paragraph:last-of-type {
+.two-columns__paragraph:last-of-type {
     margin-bottom: 0px;
 }
 
@@ -135,12 +134,209 @@
     font-weight: bold;
 }
 
+.digits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.section-title {
+    width: 60%;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section-subtitle {
+    width: 60%;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 20px;
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 0px auto;
+}
+
+.table__cell {
+    width: 250px;
+    margin-top: 60px;
+}
+
+.table__heading {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.table__text {
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.feynman {
+    height: 790px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0px;
+    background-color: #f2f2f2;
+    background-image: url(../images/feynman.png);
+    background-size: 867px 637px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    z-index: 2;
+}
+
+.feynman__title {
+    width: 648px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.feynman__subtitle {
+    text-align: center;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.feynman__link {
+    position: absolute;
+    top: 50%;
+    right: 48px;
+    color: #2f80ed;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    text-decoration: none;
+    ;
+}
+
 
 /* и элемента с модификатором вида ключ-значение */
+
+.kaufman {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    background-color: black;
+}
+
+.section-title_theme_dark {
+    margin-top: 90px;
+}
+
+.section-subtitle_theme_dark {
+    margin-top: 20px;
+}
+
+.table_theme_dark {
+    margin: 0px auto 90px auto;
+}
 
 .table__cell_theme_dark {
     width: 200px;
     color: white;
     margin-right: 0;
     margin-top: 80px;
+}
+
+.kaufman__triangle {
+    position: absolute;
+    right: -210px;
+    top: 0px;
+    height: 877px;
+    width: 877px;
+    overflow: hidden;
+    background-image: url(../images/kaufman-triangle.svg);
+    background-size: contain;
+    z-index: -1;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    min-height: 350px;
+    color: white;
+    background-color: black;
+}
+
+.footer__columns {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.logo_place_footer {
+    background-image: url(../images/logo_place_footer.svg);
+    background-repeat: no-repeat;
+    background-size: 183px 35px;
+}
+
+.footer__column_content_copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 711px;
+}
+
+.footer__author {
+    position: absolute;
+    bottom: 18px;
+    line-height: 25px;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.footer__column-heading {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.footer__column-links {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    list-style-type: none;
+    margin-bottom: 16px;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+.footer__column-link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__social-icon {
+    margin-right: 10px;
 }

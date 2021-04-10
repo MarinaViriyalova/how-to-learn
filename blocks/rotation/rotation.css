@@ -4,14 +4,12 @@
     }
     to {
         transform: rotate(345deg);
-        ;
     }
 }
 
 @keyframes kaufman__triangle {
     from {
         transform: rotate(0deg);
-        ;
     }
     to {
         transform: rotate(360deg);

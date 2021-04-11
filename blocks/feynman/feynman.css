@@ -1,7 +1,3 @@
-@import url(./__link/feynman__link.css);
-@import url(./__subtitle/feynman__subtitle.css);
-@import url(./__title/feynman__title.css);
-@import url(./__main-illustration/feynman__main-illustration.css);
 .feynman {
     min-height: 790px;
     display: flex;

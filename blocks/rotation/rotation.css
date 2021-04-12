@@ -15,3 +15,11 @@
         transform: rotate(360deg);
     }
 }
+
+.kaufman__triangle {
+    animation: kaufman__triangle 20s infinite linear;
+}
+
+.header__square-pic {
+    animation: header__square-pic 20s infinite linear;
+}
